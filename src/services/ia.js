@@ -3,7 +3,7 @@ export async function getResponse (prompt) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'Bearer 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'
+      Authorization: 'Bearer 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'
     },
     body: JSON.stringify({
       model: 'gpt-3.5-turbo',
@@ -15,6 +15,6 @@ export async function getResponse (prompt) {
     )
   })
   const json = await response.json()
-  console.log(json)
-  return json
+  console.log(json.choices[0].message.content)
+  return json.choices[0].message.content
 }

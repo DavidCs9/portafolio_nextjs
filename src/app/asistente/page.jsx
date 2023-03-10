@@ -2,19 +2,17 @@
 // import { SendIcon } from '../../../componentes/SendIcon'
 import { getResponse } from '@/services/ia'
 import Link from 'next/link'
+import { SendIcon } from '../../../componentes/SendIcon'
 
-export default function asistentePage () {
-  async function handleClick () {
-    let promise = null
-    const input = document.getElementById('userInput')
-    console.log(input.value)
-    promise = getResponse(input.value)
+export default function AsistentePage () {
+  const handleClick = async () => {
+    const input = document.getElementById('input').value
+    console.log(input)
+    const promise = getResponse(input)
     const response = await promise
-    const value = response
-    document.getElementById('response').innerHTML = value
-    promise = null
+    document.getElementById('response').innerHTML = response
+    document.getElementById('input').value = ''
   }
-
   return (
     <>
       <nav className='bg-black text-white w-full'>
@@ -36,35 +34,18 @@ export default function asistentePage () {
         <h3 className=' text-center p-3'>Pregunta cualquier cosa que se podria preguntar en una
           entrevista de trabajo
         </h3>
-        <form
-          className=' w-3/4 m-auto bg-slate-700 rounded-lg shadow-lg'
-        >
-          <div
-            className='relative flex flex-col py-3 px-4 border flex-grow
-          border-gray-900/50 text-white bg-gptlightgray rounded-md '
-          >
-            <textarea
-              id='userInput'
-              rows={1}
-              tabIndex={0}
-              autoFocus
-              defaultValue=''
-              placeholder='Ejem: Porque estudiaste tu carrera?'
-              className='h-[24px] resize-none bg-transparent border-0 outline-none'
-            />
-            <button
-              className='absolute p-1 rounded-md bottom-2.5 right-2.5'
-              onClick={handleClick}
-            >Ask
-            </button>
-          </div>
-        </form>
-
+        <div className=' w-3/4 m-auto flex flex-grow flex-col relative rounded-lg bg-white p-3'>
+          <input
+            placeholder='Ej Donde estudio David?' id='input' className=' outline-none text-black' cont
+          />
+          <button onClick={handleClick} className=' bg-white text-black pr-3 absolute bottom-2.5 right-2.5'>
+            <SendIcon />
+          </button>
+        </div>
         <main className=' mt-10'>
           <article className=' w-3/4 bg-gray-500 m-auto p-3 rounded-lg'>
             <p id='response'>Respuesta...</p>
           </article>
-
         </main>
       </div>
     </>

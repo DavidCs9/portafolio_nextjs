@@ -1,3 +1,5 @@
+'use client'
+import { getResponse } from '@/services/ia'
 import Link from 'next/link'
 
 export default function Home () {
@@ -31,6 +33,7 @@ export default function Home () {
           >Asistente Inteligente
           </Link>
         </div>
+        <button onClick={getResponse}>fetch</button>
       </div>
     </>
   )
