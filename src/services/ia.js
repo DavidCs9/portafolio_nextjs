@@ -3,7 +3,7 @@ export async function getResponse (prompt) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'Bearer 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'
+      Authorization: 'Bearer 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'
     },
     body: JSON.stringify({
       model: 'gpt-3.5-turbo',

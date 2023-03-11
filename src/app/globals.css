@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-input {
-    border: none;
-}
-
-input:focus {
-    border: none;
+body {
+    background-color: black;
 }
