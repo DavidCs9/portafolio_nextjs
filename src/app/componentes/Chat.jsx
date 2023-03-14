@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { DeleteButton } from './Deletebutton'
 export function Chat () {
   const messages = useMessageStore(state => state.messages)
+  const deletebtn = useMessageStore(state => state.deletebtn)
 
   return (
     <motion.div
@@ -22,7 +23,10 @@ export function Chat () {
             <Message key={entry.id} {...entry} index={index} />
           ))}
         </AnimatePresence>
-        <DeleteButton />
+        {console.log(messages)}
+        {deletebtn
+          ? <DeleteButton />
+          : ''}
       </main>
     </motion.div>
 

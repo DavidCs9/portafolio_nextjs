@@ -2,7 +2,10 @@ export function Loading () {
   return (
     <p className='flex pr-8'>
       Thinking...
-      <svg width='20' height='20' fill='currentColor' className='ml-2 animate-spin' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'>
+      <svg
+        width='20' height='20' fill='currentColor' className='ml-2 animate-spin' viewBox='0 0 1792 1792'
+        xmlns='http://www.w3.org/2000/svg'
+      >
         <path d='M526 1394q0 53-37.5 90.5t-90.5 37.5q-52 0-90-38t-38-90q0-53
           37.5-90.5t90.5-37.5 90.5 37.5 37.5 90.5zm498 206q0 53-37.5 90.5t-90.5
           37.5-90.5-37.5-37.5-90.5 37.5-90.5 90.5-37.5 90.5 37.5 37.5

@@ -31,8 +31,6 @@ export function ChatForm () {
     <motion.div
       className='w-full'
     >
-      <h1 className=' text-center text-3xl pb-3'>David Virtual</h1>
-      <h2 className=' text-center text-xl pb-7'>Preguntame cualquier cosa que me preguntarias en un entrevista real...</h2>
       <motion.section
         whileTap={{ scale: 0.98 }}
         className='  rounded-lg p-1 w-11/12 m-auto lg:w-4/6'

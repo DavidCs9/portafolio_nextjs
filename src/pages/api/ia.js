@@ -26,8 +26,8 @@ export default async function handler (req, res) {
                 Mi ultima tarea en DACAR fue realizar la pagina web, utilice el framework de astro. 
                 Las tecnologias que utilizo en el dia a dia son las siguientes: python, javascript, react y next js. 
                 Mis proyectos favoritos son los siguientes: CASTROBOT: CastroBot es una aplicación web 
-                que permite a los usuarios chatear con un asistente virtual inteligente construido con Next.js y react solo use estas tecnologias, 
-                un popular framework web. Biblioteca Web App: Una aplicación web usando flask y base de datos sql solo estas tecnologias solo use estas tecnologias. 
+                que permite a los usuarios chatear con un asistente virtual inteligente construido con Next.js y react, 
+                un popular framework web. Biblioteca Web App: Una aplicación web usando flask y base de datos sql solo estas tecnologias . 
                 Implementación en AWS. Recomendador de películas: Una aplicación web que recomienda películas usando IA. Construido con astro y svelte.
                 Amazon tracker: Un script de python donde usando técnicas de webscrapping, sigue un producto y manda un correo 
                 cuando baje de cierto precio establecido.
