@@ -1,5 +1,5 @@
 'use client'
-import { getResponse } from '@/services/ia'
+import { getResponse } from '@/app/services/ia'
 import { SendIcon } from './SendIcon'
 
 export default function UserInput () {

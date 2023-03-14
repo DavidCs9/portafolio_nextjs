@@ -6,10 +6,7 @@ import { motion } from 'framer-motion'
 
 export function Message ({ ia, message, loading, index }) {
   const avatar = ia ? <UserAvatar /> : <IaAvatar />
-  console.log(message)
-  // const messageList = lines.map((line, index) => (
-  //   <p key={index}>{ia ? <TypingEffect text={line} /> : message}</p>
-  // ))
+
   const list = {
     hidden: {
       opacity: 0,
@@ -47,12 +44,12 @@ export function Message ({ ia, message, loading, index }) {
       exit='exit'
       variants={list}
     >
-      <article className='flex gap-3 pb-1 p-6 m-auto max-w-3xl text-gray-100 '>
-        <figure className={`${ia ? ' bg-purple-700' : ' bg-green-700'} w-8 h-8 flex items-center justify-center rounded-md`}>
+      <article className='flex gap-3 pb-1 p-6 m-auto max-w-3xl text-gray-100 w-full '>
+        <figure className={`${ia ? ' bg-secundary' : '  bg-third'} w-8 h-8 flex items-center justify-center rounded-md`}>
           {avatar}
         </figure>
         <div className=' flex-1'>
-          <p className={`${ia ? ' bg-purple-700' : ' bg-green-700'} rounded-md p-4`}>
+          <p className={`${ia ? ' bg-secundary' : ' bg-third'} rounded-md p-4`}>
             {loading ? <Loading /> : <TypingEffect text={message} />}
           </p>
         </div>

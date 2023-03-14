@@ -1,4 +1,4 @@
-import { useMessageStore } from '@/store/message'
+import { useMessageStore } from '@/app/store/message'
 import { ChatForm } from './ChatForm'
 import { Message } from './Message'
 import { motion, AnimatePresence } from 'framer-motion'

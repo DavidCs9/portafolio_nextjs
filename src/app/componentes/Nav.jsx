@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Nav () {
   return (
-    <nav className='bg-black text-white w-full'>
+    <nav className=' text-white w-full'>
       <ul className='flex justify-center p-4'>
         <li className=' pr-3'>
           <Link href='/'>
@@ -10,8 +10,13 @@ export default function Nav () {
           </Link>
         </li>
         <li>
-          <Link href='/asistente'>
+          <Link className='pr-3' href='/asistente'>
             Asistente
+          </Link>
+        </li>
+        <li>
+          <Link href='/proyectos'>
+            Proyectos
           </Link>
         </li>
       </ul>

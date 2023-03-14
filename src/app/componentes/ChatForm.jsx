@@ -1,4 +1,4 @@
-import { useMessageStore } from '@/store/message'
+import { useMessageStore } from '@/app/store/message'
 import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { SendIcon } from './SendIcon'
@@ -29,20 +29,22 @@ export function ChatForm () {
 
   return (
     <motion.div
-      className='w-full bg-black'
+      className='w-full'
     >
       <h1 className=' text-center text-3xl pb-3'>David Virtual</h1>
       <h2 className=' text-center text-xl pb-7'>Preguntame cualquier cosa que me preguntarias en un entrevista real...</h2>
-      <section className=' bg-neutral-900 border-neutral-600 border-2 rounded-lg p-1 w-3/4 m-auto'>
+      <motion.section
+        whileTap={{ scale: 0.98 }}
+        className='  rounded-lg p-1 w-11/12 m-auto lg:w-4/6'
+      >
         <form
           onSubmit={handleSubmit}
           onKeyDown={handleKeyDown}
           className=' w-full m-auto'
         >
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            className='relative flex flex-col py-3 px-4 border flex-grow
-          border-gray-900/50 text-white bg-gptlightgray rounded-md '
+          <div
+            className='relative flex flex-col py-3 px-4  flex-grow
+           text-white bg-primary rounded-md '
           >
             <textarea
               ref={textAreaRef}
@@ -60,9 +62,9 @@ export function ChatForm () {
             >
               <SendIcon />
             </motion.button>
-          </motion.div>
+          </div>
         </form>
-      </section>
+      </motion.section>
     </motion.div>
   )
 }
