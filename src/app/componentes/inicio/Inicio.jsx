@@ -4,7 +4,7 @@ import Image from 'next/image'
 export function Inicio () {
   return (
     <section
-      className='text-white pt-72 h-screen text-center p-3'
+      className='text-white pt-56 h-screen text-center p-3'
     >
       <motion.div
         initial={{ opacity: 0 }}
