@@ -6,6 +6,7 @@ export function Proyectos () {
   return (
     <section
       className='mb-40'
+      id='proyectos'
     >
       <motion.h1
         initial={{ opacity: 0 }}
