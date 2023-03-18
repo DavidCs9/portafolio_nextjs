@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout ({ children }) {
   return (
     <html lang='en' className={montserrat.className}>
-      <body className='bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r'>
+      <body className='bg-gradient-to-tr from-gray-700 via-gray-900 to-black'>
         {children}
         <script defer src='https://kit.fontawesome.com/a654d59b05.js' crossorigin='anonymous' />
       </body>

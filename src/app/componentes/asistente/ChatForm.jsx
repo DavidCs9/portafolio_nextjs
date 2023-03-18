@@ -28,7 +28,7 @@ export function ChatForm () {
   }
 
   return (
-    <motion.div
+    <div
       className='w-full'
     >
       <motion.section
@@ -42,13 +42,12 @@ export function ChatForm () {
         >
           <div
             className='relative flex flex-col py-3 px-4  flex-grow
-           text-white bg-primary rounded-md '
+           text-white bg-gray-800 rounded-md '
           >
             <textarea
               ref={textAreaRef}
               rows={1}
               tabIndex={0}
-              autoFocus
               defaultValue=''
               placeholder='Ej. Donde estudiaste?'
               className='h-[24px] resize-none bg-transparent border-0 outline-none'
@@ -63,6 +62,6 @@ export function ChatForm () {
           </div>
         </form>
       </motion.section>
-    </motion.div>
+    </div>
   )
 }
