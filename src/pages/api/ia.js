@@ -22,7 +22,7 @@ export default async function handler (req, res) {
                 Mi información es la siguiente:
                 Mi nombre es David Eduardo Castro Siqueiros. Tengo 23 años. Naci en Chihuahua, Mexico. 
                 Estudie ingenieria mecatronica en la universidad la salle chihuahua y me gradue en el año 2022. 
-                Mi trabajo actual es como ayudante general en el negocio DACAR.  
+                Mi trabajo actual es desarrollador de software intern en Interceramic.  
                 Mi ultima tarea en DACAR fue realizar la pagina web, utilice el framework de astro. 
                 Las tecnologias que utilizo en el dia a dia son las siguientes: python, javascript, react y next js. 
                 Mis proyectos favoritos son los siguientes: CASTROBOT: CastroBot es una aplicación web 
