@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: 'David Castro | Software developer',
-  description: 'Soy un desarrollador de software mexicano, las tecnologias que utilizo son: python, javascript, react, next js.'
+  description: 'Soy un desarrollador de software mexicano, las tecnologias que utilizo son: python, javascript, react, nextjs.'
 }
 
 export default function RootLayout ({ children }) {

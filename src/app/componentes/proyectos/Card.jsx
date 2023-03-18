@@ -16,9 +16,9 @@ export default function Card ({ id, nombre, descripcion, img, url, tecnologias, 
       <Image
         width={500}
         height={500}
-        className='w-full rounded-md'
+        className='rounded-md'
         src={img}
-        alt='Sunset in the mountains'
+        alt={nombre}
       />
       <div className='px-6 py-4'>
         <div className='font-bold text-xl mb-2'>{nombre}</div>
@@ -26,7 +26,7 @@ export default function Card ({ id, nombre, descripcion, img, url, tecnologias, 
           {descripcion}
         </p>
       </div>
-      <div className='w-full flex justify-center gap-4'>
+      <div className='flex justify-center gap-4'>
         <button
           type='button' className='py-2 px-4  bg-indigo-600 hover:bg-indigo-700
        focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white
@@ -39,7 +39,7 @@ export default function Card ({ id, nombre, descripcion, img, url, tecnologias, 
           type='button' className='py-2 px-4  bg-slate-800 hover:bg-slate-900
        focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white
         text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2
-        focus:ring-offset-2  rounded-lg'
+        focus:ring-offset-2 rounded-lg'
         >
           <a href={git}>GITHUB</a>
         </button>
