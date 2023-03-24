@@ -1,9 +1,13 @@
+import Image from 'next/image'
+
 export function UserAvatar () {
   return (
-    <img
+    <Image
       className=' rounded-md bg-black'
       alt='foto de david'
-      src='https://www.davidcastro.tech/static/images/david.jpg'
+      src='/fotoperfil.jpg'
+      width={200}
+      height={200}
     />
   )
 }
