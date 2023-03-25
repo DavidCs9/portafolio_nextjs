@@ -13,10 +13,10 @@ export function Proyectos () {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 1 }}
-        className='text-white text-4xl pt-10 font-bold text-center'
+        className='text-white text-4xl p-20 font-bold text-center'
       >PROYECTOS
       </motion.h1>
-      <div className='grid justify-center pt-12 gap-10'>
+      <div className=' md:flex justify-center grid'>
         {proyectos.map((entry, index) => (
           <Card key={index} {...entry} />
         ))}

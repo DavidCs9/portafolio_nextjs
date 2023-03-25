@@ -11,7 +11,7 @@ export default function Card ({ id, nombre, descripcion, img, url, tecnologias, 
       transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
       whileHover={{ scale: 1.05 }}
       whileFocus={{ scale: 1.05 }}
-      className=' w-80 rounded-md bg-zinc-100 shadow-lg'
+      className=' w-80 lg:relative rounded-md bg-zinc-100 shadow-lg m-10 lg:h-[600px]'
     >
       <Image
         width={500}
@@ -44,9 +44,9 @@ export default function Card ({ id, nombre, descripcion, img, url, tecnologias, 
           <a href={git}>GITHUB</a>
         </button>
       </div>
-      <div className='px-6 pt-4 pb-2'>
+      <div className='p-6 lg:absolute lg:bottom-2 '>
         {tecnologias.map((entry, index) => (
-          <span key={index} className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2 mb-2'>#{entry}</span>
+          <span key={index} className=' inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2 mb-2'>#{entry}</span>
         ))}
       </div>
     </motion.div>
