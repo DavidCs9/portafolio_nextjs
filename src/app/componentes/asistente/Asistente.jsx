@@ -1,7 +1,7 @@
 import { Chat } from './Chat'
 import { motion } from 'framer-motion'
 
-export function Asistente() {
+export function Asistente () {
   return (
     <motion.section
       initial={{ x: -50, opacity: 0 }}

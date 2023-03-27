@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-export default function Card({ id, nombre, descripcion, img, url, tecnologias, git }) {
+export default function Card ({ id, nombre, descripcion, img, url, tecnologias, git }) {
   return (
     <motion.div
       key={id}
