@@ -1,11 +1,11 @@
 import { Chat } from './Chat'
 import { motion } from 'framer-motion'
 
-export function Asistente () {
+export function Asistente() {
   return (
     <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      initial={{ x: -50, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
       viewport={{ once: false }}
       transition={{ duration: 1 }}
       className=' text-white p-6 h-[700px]'

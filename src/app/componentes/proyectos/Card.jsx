@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-export default function Card ({ id, nombre, descripcion, img, url, tecnologias, git }) {
+export default function Card({ id, nombre, descripcion, img, url, tecnologias, git }) {
   return (
     <motion.div
       key={id}
       initial={{ x: -50, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: false, amount: 0.3 }}
       transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
       whileHover={{ scale: 1.05 }}
       whileFocus={{ scale: 1.05 }}
