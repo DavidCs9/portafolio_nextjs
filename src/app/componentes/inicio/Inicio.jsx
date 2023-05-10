@@ -35,7 +35,7 @@ export function Inicio () {
         className='flex justify-center pt-9'
       >
         <Image
-          src='/robot.svg'
+          src='/robot.webp'
           alt='David Castro'
           width={200}
           height={200}

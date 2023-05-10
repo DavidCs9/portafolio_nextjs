@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Card from './Card'
-import { proyectos } from './proyectos'
+import { proyecto } from './proyecto'
 
 export function Proyectos () {
   return (
@@ -14,10 +14,9 @@ export function Proyectos () {
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 1 }}
         className='text-white text-4xl p-20 font-bold text-center'
-      >PROYECTOS
-      </motion.h1>
+      />
       <div className=' md:flex justify-center grid'>
-        {proyectos.map((entry, index) => (
+        {proyecto.map((entry, index) => (
           <Card key={index} {...entry} />
         ))}
       </div>
