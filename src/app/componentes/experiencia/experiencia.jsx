@@ -12,7 +12,7 @@ export function Experiencia () {
       <h1 className=' text-3xl text-white text-center'>EXPERIENCIA</h1>
       <div className=' text-white pt-6 text-left'>
         <p className=' text-2xl text-center text-slate-400'>
-          Interceramic
+          INTERCERAMIC
         </p>
         <p className=' text-2xl text-center text-cyan-200'>
           Desarrollador de software
