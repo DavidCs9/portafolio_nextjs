@@ -6,8 +6,8 @@ export function Experiencia () {
       initial={{ x: -50, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       viewport={{ once: false }}
-      transition={{ duration: 1 }}
-      className=' h-96 p-3 lg:w-[800px] m-auto'
+      transition={{ duration: 0.2 }}
+      className=' p-3 lg:w-[800px] m-auto'
     >
       <h1 className=' text-3xl text-white text-center'>EXPERIENCIA</h1>
       <div className=' text-white pt-6 text-left'>
@@ -17,19 +17,43 @@ export function Experiencia () {
         <p className=' text-2xl text-center text-cyan-200'>
           Desarrollador de software
         </p>
-        <p className=' ml-8 text-md pt-4 lg:text-center lg:text-2xl'>Responsabilidades</p>
+        <p className=' text-center text-md pt-4 lg:text-center lg:text-2xl text-cyan-500'>Responsabilidades</p>
         <motion.ul
           initial={{ x: 50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: false }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className=' list-disc text-sm w-9/12 mx-auto pt-1 lg:text-xl lg:pt-2'
+          transition={{ duration: 1, delay: 0.5 }}
+          className=' mb-3 text-center text-sm w-9/12 mx-auto pt-1 lg:text-xl lg:pt-2'
         >
-          <motion.li>Apoyo requerimientos en ORACLE Forms y Reports
+          <motion.li className='mb-2'>Creación y mantenimiento de objetos en base de datos ORACLE con PL/SQL
           </motion.li>
-          <motion.li>Apoyo en creacion y mantenimiento de servicios web
+          <motion.li className='mb-2'>Creación y mantenimiento de servicios web
           </motion.li>
-          <motion.li>Investigacion para mejoras en procesos enfocados en TI
+          <motion.li>Investigación para mejoras en procesos enfocados en TI
+          </motion.li>
+        </motion.ul>
+      </div>
+
+      <div className=' text-white pt-6 text-left mb-28'>
+        <p className=' text-2xl text-center text-slate-400'>
+          MARCOS DACAR
+        </p>
+        <p className=' text-2xl text-center text-cyan-200'>
+          Desarrollador web
+        </p>
+        <p className=' text-center text-md pt-4 lg:text-center lg:text-2xl text-cyan-500'>Responsabilidades</p>
+        <motion.ul
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className=' mb-3 text-center text-sm w-9/12 mx-auto pt-1 lg:text-xl lg:pt-2'
+        >
+          <motion.li className='mb-2'>Creación y mantenimiento de pagina web
+          </motion.li>
+          <motion.li className='mb-2'>Indexación de pagina a motores de busqueda
+          </motion.li>
+          <motion.li>Puntuacion de 100 en performance y SEO
           </motion.li>
         </motion.ul>
       </div>
