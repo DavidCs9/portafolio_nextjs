@@ -8,7 +8,7 @@ export function Asistente () {
       whileInView={{ x: 0, opacity: 1 }}
       viewport={{ once: false }}
       transition={{ duration: 1 }}
-      className=' text-white p-6 h-[700px]'
+      className=' text-white p-6 min-h-screen  '
       id='asistente'
     >
       <h1 className=' text-center text-3xl pb-5'>ASISTENTE VIRTUAL</h1>

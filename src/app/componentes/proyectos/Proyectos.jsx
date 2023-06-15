@@ -5,7 +5,7 @@ import { proyecto } from './proyecto'
 export function Proyectos () {
   return (
     <section
-      className='mb-40'
+      className='mb-40 flex flex-col items-center justify-center w-full'
       id='proyectos'
     >
       <motion.h1
@@ -14,8 +14,10 @@ export function Proyectos () {
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 1 }}
         className='text-white text-4xl p-20 font-bold text-center'
-      />
-      <div className=' md:flex justify-center grid'>
+      >
+        Proyectos
+      </motion.h1>
+      <div className='flex flex-wrap gap-20 justify-center'>
         {proyecto.map((entry, index) => (
           <Card key={index} {...entry} />
         ))}

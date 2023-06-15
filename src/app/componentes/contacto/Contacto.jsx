@@ -38,7 +38,7 @@ export default function Contacto () {
               </svg>
             </a>
             <a href='/CV.pdf' className='text-gray-400 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white'>
-              <i class='fa-regular fa-address-book' />
+              <i className='fa-regular fa-address-book' />
             </a>
           </div>
         </div>
